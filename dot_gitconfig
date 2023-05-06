@@ -1,0 +1,5 @@
+[user]
+	email = 4395149+primeinc@users.noreply.github.com
+	name = primeinc
+[alias]
+	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch -f --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
